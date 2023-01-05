@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="viewlist()">
+<section class="section-one">
+	<div class="main-one">
+		<ul class="nav">
+		  <li class="nav-item">
+			<a class="nav-link" href="index.html">Main</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="about.html">About Us</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="menu.html">Menu</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="gallery.html">Gallery</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="blog.html">Blog</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="contact.html">Contacts Us</a>
+		  </li>		  
+		</ul>	
+	</div>
+</section>
+
+<section class="menu-two">
+	<div class="input">
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<form class="form-inline" action="/action_page.php ">
+				<input class="form-control mr-sm-2" type="text" placeholder="Search The Menu" style="width:500px"  id="search" onkeyup="search(this.value)" />
+				<button class="btn btn-success" type="submit" style="background-color:#8a1a0f; border:none;" onclick="seachclick()">Search</button>
+			</form>
+		</nav>
+	</div>
+</section>
+
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
