@@ -1,0 +1,13 @@
+
+
+.box{
+	background-color:#ccc;
+	padding:15px;
+}
+
+#menu .nav-link{
+	color:#000;
+	background-color:#ccc;
+}
+
+.navigation .navbar-toggler{ background-color:#000;}

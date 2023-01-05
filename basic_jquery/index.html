@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+	.box{
+		width:300px;
+		background:#ccc;
+		padding:20px;
+	}
+  </style>
+</head>
+<body>
+	
+	
+	<div id="name">
+	
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+							<div class="row">
+								<div class="col-md-6">
+									<div class="image-shadow">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="product_image">
+													<img src="asset/three.jpg" />
+												</div>
+												<h4 class="price">$40.00</h4>
+											</div>
+											<div class="col-md-6">
+												<div class="image_description">
+													<h2>google home mini</h2>
+													<p>a product of google inc.</p>
+													<h3>Quantity: <span class="span_quan">2</span></h3>
+													<div class="cross"><i class="fa-solid fa-xmark"></i></div>
+												</div>
+											</div>	
+										</div>
+										<div class="product_btn">
+											<button>Buy Now</button>			
+										</div>
+									</div>
+								</div>
+							</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<button id="submitbtn">submit</button>
+	
+	
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+		$(document).ready(function(){
+		
+			$("#submitbtn").click(function(){
+				
+				var obj = {
+					name : "kapil",
+					age : 27,
+					isMale : true,
+					email : "kapil@gmail.com",
+					mobile : 999999999
+				};
+				
+			
+				var el = document.createElement("div");
+				el.setAttribute("class", "box");
+				//el.innerHTML = obj.email;
+				
+				
+				var elul = document.createElement("ul");
+				
+				var elli = document.createElement("li");
+				elli.innerHTML = obj.name;
+				
+				var elli2 = document.createElement("li");
+				elli2.innerHTML = obj.age;
+				
+				var elli3 = document.createElement("li");
+				elli3.innerHTML = obj.email;
+				
+				var elli4 = document.createElement("li");
+				elli4.innerHTML = obj.mobile;
+				
+				
+				elul.append(elli);
+				elul.append(elli2);
+				elul.append(elli3);
+				elul.append(elli4);
+				
+				console.log(elul);
+				
+				el.append(elul);
+				console.log(el);
+				
+				
+				$("#name").append(el);
+				
+				
+				
+				
+				
+				//$("#navmenu").toggle();
+				//$("#myid").html('<span class="sdssd">I love my India</span>');
+				//$("#bind").append('<span class="sdssd">I love my India</span>');
+				
+				var txtname = $("#nav").find('.navbar-toggler'); // string type
+				var age = 27;  // number type
+				var IsMale = false; //boolean type
+				
+				
+				
+				
+				
+				var arr = ["kapil", "vikas", "monu", "sonu", "jatin"];
+				var arr2 = [27, 78, 34, 16, 20];
+				
+				var arr3 = [
+					{
+						name : "kapil",
+						email: "kapil@gmail.com",
+						mobile: 8698872632
+					},
+					{
+						name : "vikas",
+						email: "vikas@gmail.com",
+						mobile: 9987649869
+					},
+					{
+						name : "mukul",
+						email: "mukul@gmail.com",
+						mobile: 8800505689
+					}
+				];  // array, JSON
+				
+				
+				
+				
+					
+					
+				//$("#name").html(obj.name + "------" + obj.email);
+				//$("#name").html(arr3[2].mobile);
+				
+					
+			});
+			
+			
+			$("#submitbtn2").click(function(){
+				//$("#navmenu").show();
+			});
+			
+		});
+  </script>
+  
+</body>
+</html>
+	

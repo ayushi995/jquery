@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+	.box{
+		width:300px;
+		background:#ccc;
+		padding:20px;
+	}
+  </style>
+</head>
+<body>
+	
+	
+	<div id="name">
+	
+	</div>
+	
+	
+	
+	
+	<button id="submitbtn">submit</button>
+	
+	
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+		$(document).ready(function(){
+		
+			$("#submitbtn").click(function(){
+				var arr3 = [
+					{
+						name : "kapil",
+						email: "kapil@gmail.com",
+						mobile: 9999909999,
+						IsMale: true
+					},
+					{
+						name : "kiran",
+						email: "vikas@gmail.com",
+						mobile: 9987649999,
+						IsMale: false
+					},
+					{
+						name : "mukul",
+						email: "mukul@gmail.com",
+						mobile: 9934549999,
+						IsMale: true
+					},
+					{
+						name : "sonu",
+						email: "mukul@gmail.com",
+						mobile: 9934549999,
+						IsMale: true
+					}
+				];  // array, JSON
+				
+				//console.log();
+				//looping
+				// 1.for 2.while 3.do-while
+				
+				for(var i=0; i<arr3.length; i++){
+				
+					if(arr3[i].IsMale == true){
+						var el = document.createElement("div");
+						el.innerHTML = arr3[i].name;
+						el.setAttribute("class", "box");
+						console.log(el);
+						$("#name").append(el);
+					}
+					
+				}
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			});
+			
+			
+			$("#submitbtn2").click(function(){
+				//$("#navmenu").show();
+			});
+			
+		});
+  </script>
+  
+</body>
+</html>
+	

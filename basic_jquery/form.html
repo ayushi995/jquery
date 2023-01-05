@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+	.box{
+		width:300px;
+		background:#ccc;
+		padding:20px;
+	}
+  </style>
+</head>
+<body>
+
+	<div>
+	
+		<div>
+			<input type="text" id="name" placeholder="Enter a Name" />
+		</div>
+		<div>
+			<input type="text" id="age" placeholder="Enter a age" />
+		</div>
+		<div>
+			<input type="text" id="email" placeholder="Enter a email" />
+		</div>
+		<div>
+			<input type="text" id="mobile" placeholder="Enter a mobile" />
+		</div>
+		<div>
+			<input type="text" id="country" placeholder="Enter a country" />
+		</div>
+		<div>
+			<input type="text" id="state" placeholder="Enter a state" />
+		</div>
+		<div>
+			<input type="text" id="city" placeholder="Enter a city" />
+		</div>
+		<div>
+			<button id="submitbtn">submit</button>
+		</div>
+	</div>
+	
+	
+	
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+		$(document).ready(function(){
+		
+			$("#submitbtn").click(function(){
+				var name = $("#name").val();
+				var age = $("#age").val();
+				var email = $("#email").val();
+				var mobile = $("#mobile").val();
+				var country = $("#country").val();
+				var state = $("#state").val();
+				var city = $("#city").val();
+				
+				
+				console.log(name + "--" + age + "--" + mobile);
+				
+			});
+			
+		});
+  </script>
+  
+</body>
+</html>
+	
