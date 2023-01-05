@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Star</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/all.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<!---section-left--->
+<button id="btn">Click</button>
+<div id="table"></div>
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>	
+<script>
+$(document).ready(function(){
+	
+	$("#btn").click(function(){
+		var count = "";
+		for(var i=1; i<=10; i++){
+		
+			for(var j=0; j<i; j++){
+				count += "*"; //count = count + "*";
+			}
+			count +="<br>";
+			console.log(count);
+			$("#table").html(count);
+			
+		}
+	});
+})
+</script>
+
+</body>
+</html>

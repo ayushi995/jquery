@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Function</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/all.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<!---section-left--->
+<div id="div"></div>
+<button id="submitbtn">Click</button>
+<button id="submitbtn2">Click2</button>
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>	
+<script>
+$(document).ready(function(){
+	function hidediv(txt, name){
+		console.log(txt);
+		$("#div").html(txt + " " + name);
+	}
+	hidediv("i love my india" , "kapil");
+	
+	$("#submitbtn").click(function(){
+		hidediv("i love my mom", "monu");
+	});
+	$("#submitbtn2").dblclick(function(){
+		hidediv("i love my papa", "Ayu");
+	});
+})
+</script>
+
+</body>
+</html>
