@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Factorial</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/all.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<section class="section-one">
+	<input type="text" name="value" id="num"></input>
+	<button id="btn"> Submit </button>
+	<div id="result"> </div>
+</section>
+	
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>	
+<script>
+$(document).ready(function() {
+		$("#btn").click(function(){
+		var value = $("#num").val();
+		$("#result").html("");
+		var last=1;
+		for(var i=value; i>=1; i--){
+		last = last * i;
+		}
+		$("#result").append(last);
+	});
+});
+</script>
+
+</body>
+</html>

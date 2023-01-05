@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Star</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/all.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<section class="section-one">
+	<div id="star"><i class="fa-solid fa-star"></i></div>
+	<button id="btn"> Submit </button>
+	<div id="result"> </div>
+</section>
+	
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>	
+<script>
+$("#btn").click(function(){
+		var star = document.createElement("i");
+		star.setAttribute("class", "fa-solid fa-star");
+		console.log(star);
+		for(var i = 1; i<=10; i++){
+			var a = star + i;
+			console.log(a);
+			document.write(a);
+		};
+	});
+</script>
+
+</body>
+</html>
