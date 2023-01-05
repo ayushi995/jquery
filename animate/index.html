@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Animate</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/all.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<!---section-one--->
+<button id="btn">Click</button>
+<section class="section-one" id="ayu">
+	<div class="main-div" id="sh">
+		<div class="blue"><img src="asset/blue.png" /></div>
+		<div class="pink"><img src="asset/pink.png" /></div>
+		<section class="icecream-main">
+			<div class="blue_ice_div">30 min away.
+			<div class="span"><i class="fa-solid fa-xmark"></i></div></div>
+			<div class="white_ice_div">Your ice is melting.</div>
+			<div class="pink_ice_div"><button>Go back</button><div class="stick"><img src="asset/stick.png" /></div></div>
+			<div class="design"><img src="asset/design.png" /></div>
+			<div class="design2"><img src="asset/design.png" /></div>
+		</section>
+	</div>
+</section>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>	
+<script>
+$(document).ready(function(){
+	$("#ayu").hide();
+	$("#btn").click(function(){
+	$("#ayu").css({"display": "block", });
+	});
+	
+});
+</script>
+
+</body>
+</html>
